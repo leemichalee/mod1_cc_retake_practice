@@ -15,7 +15,7 @@ annalise = RestaurantOwner.new("Annalise Keating", 40)
 connor = RestaurantOwner.new("Connor Walsh", 20)
 
 lawbreakers = Restaurant.new(annalise, "Lawbreakers", 5)
-weenies = Restaurant.new(connor, "Weenie Hut Juniors", 1)
+weenies = Restaurant.new(connor, "Weenie Hut Juniors", 10)
 lawabiders = Restaurant.new(annalise, "Lawabiders", 4)
 
 pizza_item = MenuItem.new(lawbreakers, pizza, 100.2)

@@ -25,4 +25,9 @@ class Restaurant
     def has_dish?(recipe)
         recipes.include? recipe
     end
+
+    def self.highest_rated
+        highest_rating = self.all.map{|resters| resters.star_rating}.max
+        self.all.find{|resters| resters.star_rating == highest_rating}
+    end
 end
