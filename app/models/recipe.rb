@@ -34,6 +34,6 @@ class Recipe
     end
 
     def self.inactive
-        #come back
+        self.all - MenuItem.all.map{|items| items.recipe}
     end
 end
