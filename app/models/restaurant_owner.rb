@@ -22,4 +22,8 @@ class RestaurantOwner
     def self.average_age
         self.all.sum{|owners| owners.age} / self.all.length
     end
+
+    def sell_restaurant(restaurant, buyer)
+        restaurant.owner = buyer
+    end
 end

@@ -1,6 +1,5 @@
 class Restaurant
-    attr_accessor :name, :star_rating
-    attr_reader :owner
+    attr_accessor :name, :star_rating, :owner
     @@all = []
 
     def initialize(owner, name, star_rating)
