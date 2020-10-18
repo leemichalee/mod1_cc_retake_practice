@@ -18,4 +18,8 @@ class RestaurantOwner
     def menu_items
         MenuItem.all.select{|items| items.restaurant.owner == self}
     end
+
+    def self.average_age
+        self.all.sum{|owners| owners.age} / self.all.length
+    end
 end
