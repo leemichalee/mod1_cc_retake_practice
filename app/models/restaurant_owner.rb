@@ -10,4 +10,12 @@ class RestaurantOwner
     def self.all
         @@all
     end
+
+    def restaurants
+        Restaurant.all.select{|resters| resters.owner == self}
+    end
+
+    def menu_items
+        MenuItem.all.select{|items| items.restaurant.owner == self}
+    end
 end
