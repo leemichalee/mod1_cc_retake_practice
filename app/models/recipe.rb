@@ -21,6 +21,11 @@ class Recipe
     end
 
     def average_price
-        self.menu_items.sum{|items| items.price} / self.menu_items.length
+        average = self.menu_items.sum{|items| items.price} / self.menu_items.length
+        average.to_i
+    end
+
+    def highest_price
+        self.menu_items.max{|items| items.price}.price.to_i
     end
 end
