@@ -32,4 +32,8 @@ class Recipe
     def cheapest_restaurant
         self.menu_items.min{|items| items.price}.restaurant
     end
+
+    def self.inactive
+        #come back
+    end
 end

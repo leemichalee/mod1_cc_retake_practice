@@ -9,6 +9,7 @@ end
 cheese = Recipe.new("cheese", "its literally just cheese")
 pizza = Recipe.new("pizza", "cheese but with bread and tomatoes")
 water = Recipe.new("water", "is it actually water tho?")
+ice = Recipe.new("ice", "water but solid")
 
 annalise = RestaurantOwner.new("Annalise Keating", 40)
 connor = RestaurantOwner.new("Connor Walsh", 20)

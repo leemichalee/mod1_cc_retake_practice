@@ -21,4 +21,8 @@ class Restaurant
     def recipes
         self.menu_items.map{|items| items.recipe}
     end
+
+    def has_dish?(recipe)
+        recipes.include? recipe
+    end
 end
