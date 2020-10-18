@@ -6,6 +6,18 @@ def reload
   load 'config/environment.rb'
 end
 
+cheese = Recipe.new("cheese", "its literally just cheese")
+pizza = Recipe.new("pizza", "cheese but with bread and tomatoes")
+
+annalise = RestaurantOwner.new("Annalise Keating", 40)
+connor = RestaurantOwner.new("Connor Walsh", 20)
+
+lawbreakers = Restaurant.new(annalise, "Lawbreakers", 5)
+weenies = Restaurant.new(connor, "Weenie Hut Juniors", 1)
+
+pizza_item = MenuItem.new(lawbreakers, pizza, 100000)
+cheese_item = MenuItem.new(lawbreakers, cheese, 6.2)
+pizza2_item = MenuItem.new(weenies, pizza, 210301230)
 
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #
