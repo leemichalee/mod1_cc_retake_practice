@@ -19,4 +19,8 @@ class Recipe
     def restaurants
         self.menu_items.map{|items| items.restaurant}
     end
+
+    def average_price
+        self.menu_items.sum{|items| items.price} / self.menu_items.length
+    end
 end

@@ -17,9 +17,9 @@ lawbreakers = Restaurant.new(annalise, "Lawbreakers", 5)
 weenies = Restaurant.new(connor, "Weenie Hut Juniors", 1)
 lawabiders = Restaurant.new(annalise, "Lawabiders", 4)
 
-pizza_item = MenuItem.new(lawbreakers, pizza, 100000)
+pizza_item = MenuItem.new(lawbreakers, pizza, 100)
 cheese_item = MenuItem.new(lawbreakers, cheese, 6.2)
-pizza2_item = MenuItem.new(weenies, pizza, 210301230)
+pizza2_item = MenuItem.new(weenies, pizza, 200)
 water_item = MenuItem.new(lawabiders, water, 0.6)
 
 
