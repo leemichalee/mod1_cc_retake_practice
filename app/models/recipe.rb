@@ -28,4 +28,8 @@ class Recipe
     def highest_price
         self.menu_items.max{|items| items.price}.price.to_i
     end
+
+    def cheapest_restaurant
+        self.menu_items.min{|items| items.price}.restaurant
+    end
 end
