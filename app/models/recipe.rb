@@ -36,7 +36,7 @@ class Recipe
     def self.inactive
         self.all - MenuItem.all.map{|items| items.recipe}
         #Caryn Method
-        #Recipe.all.select { }recipe} recipe.menu_items.count == 0
+        #Recipe.all.select {|recipe| recipe.menu_items.count == 0)
         
     end
 end
