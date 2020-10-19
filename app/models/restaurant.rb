@@ -28,5 +28,7 @@ class Restaurant
     def self.highest_rated
         highest_rating = self.all.map{|resters| resters.star_rating}.max
         self.all.find{|resters| resters.star_rating == highest_rating}
+        #Caryn Method
+        #self.all.max_by{ |rest| rest.star_rating}
     end
 end
