@@ -21,5 +21,7 @@ class MenuItem
     def self.most_expensive_item
         highest = self.all.map{|items| items.price}.max
         self.all.select{|items| items.price == highest}
+        #Caryn Method
+        #self.all.max_by{|mi| mi.price}
     end
 end
