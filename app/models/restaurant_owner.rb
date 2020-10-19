@@ -26,6 +26,10 @@ class RestaurantOwner
     end
 
     def sell_restaurant(restaurant, buyer)
-        restaurant.owner = buyer
+        if restaurant.owner == self
+         restaurant.owner = buyer
+        else
+            puts "It is not yours to sell thief!"
+        end
     end
 end
