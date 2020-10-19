@@ -17,6 +17,8 @@ class RestaurantOwner
 
     def menu_items
         MenuItem.all.select{|items| items.restaurant.owner == self}
+        #Caryn version
+        #self.restaurants.map { |rest| rest.menu_items}
     end
 
     def self.average_age
